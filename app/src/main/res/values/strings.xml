@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="title_activity_room_list">RoomListActivity</string>
+    <string name="chat_room_list">채팅방 목록</string>
+</resources>
