@@ -7,5 +7,5 @@ import java.util.List;
  */
 
 public class Friends {
-    List<User> friendList;
+    List<User> friends;
 }

@@ -59,6 +59,7 @@
             android:layout_gravity="right"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
+            android:onClick="signin"
             android:text="로그인" />
 
     </LinearLayout>

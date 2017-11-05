@@ -15,31 +15,78 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <EditText
-        android:id="@+id/edittext_id"
+        android:id="@+id/edittext_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
         android:ems="10"
-        android:hint="ID"
-        android:inputType="textPersonName" />
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/warn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="right"
+        android:text="Check Email"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
 
     <EditText
         android:id="@+id/edittext_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/warn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="right"
+        android:text="Check Password"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edittext_repw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:ems="10"
+        android:hint="Password Repeat"
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/edittext_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/warn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="right"
+        android:text="Check Name"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -51,7 +98,10 @@
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="6dp"
             android:layout_weight="1"
             android:text="남" />
 
@@ -59,7 +109,10 @@
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="6dp"
             android:layout_weight="1"
             android:text="여" />
     </RadioGroup>
@@ -68,28 +121,23 @@
         android:id="@+id/edittext_birth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
         android:ems="10"
-        android:hint="dd/mm/yyyy"
+        android:hint="dd/mm/yyyy (optional)"
         android:inputType="date" />
 
     <EditText
         android:id="@+id/edittext_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
         android:ems="10"
-        android:hint="phone number"
+        android:hint="phone number (optional)"
         android:inputType="phone" />
-
-    <EditText
-        android:id="@+id/edittext_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="6dp"
-        android:ems="10"
-        android:hint="e-mail"
-        android:inputType="textEmailAddress" />
 
     <Button
         android:id="@+id/signup_button"
@@ -97,5 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginRight="8dp"
+        android:enabled="false"
+        android:onClick="signup"
         android:text="Sign-up" />
 </LinearLayout>

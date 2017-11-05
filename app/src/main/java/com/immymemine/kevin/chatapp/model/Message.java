@@ -5,12 +5,18 @@ package com.immymemine.kevin.chatapp.model;
  */
 
 public class Message {
-    String id;
-    String message;
-    String sended_time;
-    String sender;
-    String length;
-    String type;
-    String total_count;
-    String read_count;
+    public String id;
+    public String message;
+    public String sender;
+    public String type;
+    public boolean isMine;
+    public String sended_time;
+    public int length;
+    public int total_count;
+    public int read_count;
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.id.equals( ((Message)obj).id );
+    }
 }
